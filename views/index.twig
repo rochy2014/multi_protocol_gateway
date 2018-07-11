@@ -1,0 +1,65 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
+    <!--sidebar start-->
+    <aside>
+        <div id="sidebar"  class="nav-collapse ">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+                <li class="mt">
+                    <a class="active" href="/" >
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mt">
+                    <a href="control" >
+                        <i class="fa fa-cube" aria-hidden="true"></i>
+                        <span>Control Panel</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- sidebar menu end-->
+        </div>
+    </aside>
+    <!--sidebar end-->
+
+    <!-- **********************************************************************************************************************************************************
+    MAIN CONTENT
+    *********************************************************************************************************************************************************** -->
+    <!--main content start-->
+    <section id="main-content">
+        <section class="wrapper">
+          <div class="row mt">
+            <div class="col-md-2 mb">
+              <div class="gateway-panel pn">
+                <a href="lora">
+                  <div class="centered">
+                    <img src="/img/lora.png" alt="website template image" width="120">
+                  </div>
+                </a>
+                <footer>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                </footer>
+              </div>
+            </div>
+            <div class="col-md-2 mb">
+              <div class="gateway-panel pn">
+                <a href="ble">
+                  <div class="centered">
+                    <img src="/img/ble.png" alt="website template image" width="120">
+                  </div>
+                </a>
+
+                <footer>
+                    <button type="button" class="btn btn-primary">Install</button>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+{% endblock %}

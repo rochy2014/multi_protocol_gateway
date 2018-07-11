@@ -1,0 +1,172 @@
+/* colors: https://i.pinimg.com/originals/b0/c8/18/b0c8186a1e30b8684ddc842c5ad1bfec.png */
+
+.table-header {
+  width: 100%;
+  margin-bottom: 54px !important;
+}
+
+.table-header h4 {
+  display: inline-block;
+  float: left;
+}
+
+.btn-theme03 {
+  background-color: #16A085 !important;
+  border-color: #16A085 !important;
+}
+
+.btn-theme03:hover {
+  background-color: #333 !important;
+  border-color: #333 !important;
+}
+
+.btn-theme03:focus {
+  outline:0;
+}
+
+.mt {
+  margin-top: 0px;
+}
+
+.form-panel {
+  margin-top: 22px !important;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* Switch slider */
+input:checked + .slider {
+  background-color: #5cb85c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #5cb85c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(21px);
+  -ms-transform: translateX(21px);
+  transform: translateX(21px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button_start {
+  float: right;
+  font-size: 20px;
+  color: 	#61BC6D;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button_stop {
+  float: right;
+  font-size: 20px;
+  color: #EF4745;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button_restart {
+  float: right;
+  font-size: 20px;
+  color: #00AFED;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.button_start:hover, .button_stop:hover, .button_restart:hover {
+  cursor: pointer;
+  /* background-color: #eee; */
+}
+
+#auto_start {
+  float: right;
+  width: 120px;
+  padding-left: 10px;
+}
+
+.button-label {
+  color: #333;
+  font-size: 13px;
+  position: relative;
+  top: -2px;
+  /* padding-right: 10px; */
+  cursor: pointer;
+}
+.auto-p {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: -7px;
+}
+
+.gateway-panel {
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+  margin-top: 19px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  color: #333 !important;
+  height: auto;
+}
+
+.gateway-panel:hover {
+	box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.gateway-panel > a {
+  color: #333 !important;
+}
+
+.gateway-panel > footer > .pull-left {
+  margin-left: 10px;
+}
+
+.gateway-panel > footer > .pull-right {
+  margin-right: 10px;
+}

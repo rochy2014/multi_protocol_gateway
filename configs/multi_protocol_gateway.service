@@ -1,0 +1,8 @@
+[Unit]
+After=gateway.service
+
+[Service]
+ExecStart=/usr/local/bin/multi_protocol_gateway.sh
+
+[Install]
+WantedBy=default.target
