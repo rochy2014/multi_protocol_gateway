@@ -42,7 +42,11 @@
                   </div>
                 </a>
                 <footer>
-                    <button type="button" class="btn btn-danger">Delete</button>
+                    {% if lora %}
+                        <button type="button" class="btn btn-danger">Uninstall</button>
+                    {% else %}
+                        <button type="button" class="btn btn-primary">Install</button>
+                    {% endif %}
                 </footer>
               </div>
             </div>
@@ -55,7 +59,11 @@
                 </a>
 
                 <footer>
-                    <button type="button" class="btn btn-primary">Install</button>
+                    {% if ble %}
+                        <button type="button" class="btn btn-danger">Uninstall</button>
+                    {% else %}
+                        <button type="button" class="btn btn-primary">Install</button>
+                    {% endif %}
                 </footer>
               </div>
             </div>
