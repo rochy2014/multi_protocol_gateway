@@ -6,14 +6,13 @@ The scope of this project is to build a nice looking Web Application for a multi
 ## Web Application
 
 ### Home (/)
-Features offered by **/**:
-- .
+Install desired protocol gateway software to manage the BLE and/or LoRa gateway.
 
 [![](./public/img/gateway/home.png)](./public/img/gateway/home.png)
 
 ## Development
 
-##### Install environment
+#### Environment install
 **macOS**
 ```
 brew install nodejs nginx
@@ -44,7 +43,7 @@ journalctl -u multi_protocol_gateway.service -f
 sudo systemctl enable multi_protocol_gateway.service
 ```
 
-##### Start dev environment
+#### Start dev environment
 
 ```
 # macOS
@@ -61,8 +60,10 @@ DEBUG=express-locallibrary-tutorial:* sudo npm run devstart
 - Dashgum Bootstrap template - https://github.com/esironal/dashgum-template
 
 ## Todo
+
 - [ ] Web Authentication Method (Login User/Pass, Identity Plus)
-- [ ] Develop install feature for BLE and LoRa gateways
+- [ ] Develop a much stable install feature for BLE and LoRa gateways
+- [ ] Integrate other protocols
 
 ## MIT License
 
